@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/orderStatusTrackId">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:padding="10dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/tracOrderImage"
+                    android:src="@drawable/track_orderimage"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/accent"
+                    android:id="@+id/orderId"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/orderItems"
+                    android:layout_marginStart="45dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/orderItems"
+                    android:textColor="@color/accent"
+                    android:layout_alignTop="@+id/orderTotal"
+                    android:layout_toEndOf="@+id/tracOrderImage"
+                    android:layout_marginStart="37dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/orderTotal"
+                    android:textColor="@color/accent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:background="?android:windowBackground"
+                android:id="@+id/orderStatusCheckList"
+                android:layout_marginBottom="20dp">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox1"
+                    android:theme="@style/checkBoxStyle"
+                    android:clickable="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="#0a0909"
+                    android:id="@+id/layout1"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/checkBox1" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:theme="@style/checkBoxStyle"
+                    android:layout_toEndOf="@+id/layout1"
+                    android:id="@+id/checkBox2"/>
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="#0a0909"
+                    android:id="@+id/layout2"
+                    android:layout_marginTop="15dp"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/checkBox2" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:theme="@style/checkBoxStyle"
+                    android:layout_toEndOf="@+id/layout2"
+                    android:id="@+id/checkBox3" />
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="#0a0909"
+                    android:id="@+id/layout3"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toEndOf="@+id/checkBox3" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox4"
+                    android:theme="@style/checkBoxStyle"
+                    android:layout_toEndOf="@+id/layout3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:layout_below="@+id/checkBox1"
+                    android:layout_alignStart="@+id/checkBox1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Delivered"
+                    android:id="@+id/textView"
+                    android:layout_below="@+id/checkBox4"
+                    android:layout_alignStart="@+id/checkBox4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On the Way"
+                    android:layout_below="@+id/checkBox3"
+                    android:layout_alignStart="@+id/checkBox3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dispatch"
+                    android:layout_below="@+id/checkBox2"
+                    android:layout_alignStart="@+id/checkBox2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

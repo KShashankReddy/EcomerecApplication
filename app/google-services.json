@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086994237337",
+    "project_id": "online-bazzar"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086994237337:android:2a9e8adf9b6a78a1",
+        "android_client_info": {
+          "package_name": "com.example.shashankreddy.ecomerecapplicationassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086994237337-1u4toc0100mvgv93lahk0sohscd3a04e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shashankreddy.ecomerecapplicationassignment",
+            "certificate_hash": "8F14B22292488EB31465793C7EE36331EC253E4C"
+          }
+        },
+        {
+          "client_id": "1086994237337-cs02b851hrhgphmas8b31r7soq63f3ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-NeljimKJujn9ifexzOMDtWQD-AcjDig"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

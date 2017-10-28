@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Online Bazzar</string>
+    <string name="facebook_app_id">1355842154500548</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="banner_home_footer">ca-app-pub-1159041771756931/6294035803</string>
+
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="countries">
+        <item>USA</item>
+        <item>INDIA</item>
+        <item>UK</item>
+        <item>MEX</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>IL</item>
+        <item>CA</item>
+        <item>Mass</item>
+        <item>Or</item>
+        <item>NY</item>
+        <item>NJ</item>
+        <item>PHI</item>
+        <item>BT</item>
+        <item>MO</item>
+        <item>WA</item>
+        <item>AL</item>
+        <item>NH</item>
+    </string-array>
+    <string name="title_activity_log_out">LogOut</string>
+
+</resources>
